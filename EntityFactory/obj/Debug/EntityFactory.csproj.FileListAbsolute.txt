@@ -1,0 +1,14 @@
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityFactory\bin\Debug\EntityFactory.dll.config
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityFactory\bin\Debug\EntityFactory.dll
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityFactory\bin\Debug\EntityFactory.pdb
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityFactory\bin\Debug\EntityFramework.dll
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityFactory\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityFactory\bin\Debug\EntityFramework.xml
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityFactory\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityFactory\obj\Debug\EntityFactory.csprojAssemblyReference.cache
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityFactory\obj\Debug\EntityFactory.csproj.CoreCompileInputs.cache
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityFactory\obj\Debug\EntityFactory.csproj.CopyComplete
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityFactory\obj\Debug\EntityFactory.dll
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityFactory\obj\Debug\EntityFactory.pdb
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityFactory\obj\Debug\EntityFactory.Migrations.init.resources
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityFactory\obj\Debug\EntityFactory.csproj.GenerateResource.cache

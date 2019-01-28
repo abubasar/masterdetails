@@ -1,0 +1,6 @@
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityLibrary\bin\Debug\netstandard2.0\EntityLibrary.deps.json
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityLibrary\bin\Debug\netstandard2.0\EntityLibrary.dll
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityLibrary\obj\Debug\netstandard2.0\EntityLibrary.csprojAssemblyReference.cache
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityLibrary\obj\Debug\netstandard2.0\EntityLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityLibrary\obj\Debug\netstandard2.0\EntityLibrary.AssemblyInfoInputs.cache
+C:\Users\Fazlay Rabby\source\repos\MasterDetailsWithCascadingDropDown\EntityLibrary\obj\Debug\netstandard2.0\EntityLibrary.AssemblyInfo.cs
