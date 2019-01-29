@@ -77,48 +77,79 @@ $(document).ready(function () {
                     $('#ProductId').append('<option value="' + value.ProductId + '">' + value.ProductName + '</option>');
                 });
             }
+
         });
     });
 });
 
-/*
 $(document).ready(function () {
     $('#add').click(function () {
-        var isAllValid = true;
-        if ($('#productCategory').val() == "0") {
-            isAllValid = false;
-            $('#productCategory').siblings('span.error').css('visibility', 'visible');
-        } else {
-            $('#productCategory').siblings('span.error').css('visibility', 'hidden');
-        }
+        if ($.trim($("#productCategory").val()) == "0" || $.trim($("#product").val()) == "0" || $.trim($("#quantity").val()) == "" || $.trim($("#rate").val()) == "") return;
+        var productCategory = $("#CategoryId option:selected").text();
+        var product = $("#ProductId option:selected").text();
+        var quantity = $("#quantity").val();
+        var rate = $("#rate").val();
 
-        if ($('#product').val() == "0") {
-            isAllValid = false;
-            $('#product').siblings('span.error').css('visibility', 'visible');
-        } else {
-            $('#product').siblings('span.error').css('visibility', 'hidden');
-        }
 
-        if ($('#quantity').val().trim() == "") {
-            isAllValid = false;
-            $('#quantity').siblings('span.error').css('visibility', 'visible');
-        } else {
-            $('#quantity').siblings('span.error').css('visibility', 'hidden');
-        }
-
-        if ($('#rate').val().trim() == "") {
-            isAllValid = false;
-            $('#rate').siblings('span.error').css('visibility', 'visible');
-        } else {
-            $('#rate').siblings('span.error').css('visibility', 'hidden');
-        }
-
-        if (isAllValid) {
-            var $newRow = $('#mainrow').clone().removeAttr('id');
-
-        }
+        var newRow = '<tr><td>' + productCategory + '</td><td>' + product + '</td><td>' + parseInt(quantity) + '</td><td>' + parseFloat(rate) + '</td><td><a data-itemId="0" href="#" class="delete">Remove</a></td></tr>';
+        $("#orderDetailsItems").append(newRow);
+        clearItem();
+       
     });
 
 });
 
-*/
+function clearItem() {
+    $("#productCategory").val('0');
+    $("#product").val('0');
+    $("#quantity").val('');
+    $("#rate").val('');
+}
+
+$(document).on('click', 'a.delete', function (e) {
+    e.preventDefault();
+    var $self = $(this);
+    if ($(this).attr('data-itemId') == "0") {
+        $(this).parents('tr').css("background-color", "#ff6347").fadeOut(800, function () {
+            $(this).remove();
+        });
+    }
+});
+
+
+$("#submit").click(function (e) {
+    e.preventDefault();
+
+    var orderArr = [];
+    orderArr.length = 0;
+
+    $.each($("#orderDetailsItems tbody tr"), function () {
+        orderArr.push({
+            CategoryName: $(this).find('td:eq(0)').html(),
+            ProductName: $(this).find('td:eq(1)').html(),
+            Quantity: $(this).find('td:eq(2)').html(),
+            Rate: $(this).find('td:eq(3)').html()
+        });
+    });
+
+
+    var data = JSON.stringify({
+        orderNo: $("#orderNo").val(),
+        orderDate: $("#orderDate").val(),
+        description: $("#description").val(),
+        orders: orderArr
+    });
+    $.ajax({
+        type: "POST",
+        url: "/Home/SaveAll",
+        contentType: 'application/json; charset=utf-8',
+        datatype: "Json",
+        data: data,
+        success: function (data) {
+
+           
+        }
+
+    });
+   
+});

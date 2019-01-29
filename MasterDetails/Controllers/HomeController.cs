@@ -1,5 +1,6 @@
 ﻿
 using EntityFactory;
+using MasterDetails.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,14 @@ namespace MasterDetails.Controllers
         {
             
             return Json(repository.GetProducts(categoryId),JsonRequestBehavior.AllowGet);
+        }
+        [HttpPost]
+        public ActionResult SaveAll(OrderRequestModel o)
+        {
+            Product product = new Product();
+            Order order = new Order();
+           
+            return RedirectToAction("Index");
         }
 
 

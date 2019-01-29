@@ -18,7 +18,7 @@ namespace EntityFactory
         [Required]
         [ForeignKey("Product")]
         public int ProductId { get; set; }
-        public Product Product { get; set; }
+        public virtual Product Product { get; set; }
         [Required]
         public Decimal Rate { get; set; }
         [Required]

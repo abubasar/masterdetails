@@ -158,6 +158,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CategoryProductViewModel.cs" />
+    <Compile Include="Models\OrderDetailsRequestModel.cs" />
+    <Compile Include="Models\OrderRequestModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
